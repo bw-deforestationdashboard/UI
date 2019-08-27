@@ -146,6 +146,8 @@ h5 {
 }
 h1 {
   font-family: 'Cinzel', serif;
+}
+text {
   font-size: 4rem;
 }
 h2 {
@@ -174,6 +176,27 @@ img {
   display: flex;
   margin: 0 auto;
 }
+footer {
+  background-color: #6d7a48;
+  display: flex;
+  height: 20%;
+  flex-direction: column;
+}
+footer .words {
+  width: 49%;
+  display: inherit;
+}
+footer .ul-div {
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  display: inherit;
+}
+footer .ul-div ul {
+  display: inherit;
+  width: 65%;
+  justify-content: space-around;
+}
 body {
   background-color: #151515;
   background-image: url(/img/footer_lodyas.png);
@@ -191,13 +214,13 @@ body {
   width: 100%;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  padding: 1srem;
+  padding: 1rem;
 }
 .C-T-A h1 {
   font-size: 7rem;
   display: flex;
   justify-content: center;
-  text-shadow: #272838 1px 2.5px 2px;
+  text-shadow: #6d7a48 1px 2.5px 2px;
 }
 .video-section {
   background-color: #7D6D61;
@@ -219,7 +242,4 @@ body {
   align-content: center;
   width: 45%;
   padding: 2rem;
-}
-.info-section {
-  background-color: #7D6D61;
 }
