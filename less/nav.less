@@ -3,10 +3,12 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     border: 2px solid red;
-    
-        @mobile: ~"(max-width: 500px)"; {
-         flex-direction: column-reverse;
-        }
+    //media queries
+    flex-direction: column;
+    align-items: center;
+        // @mobile: ~"(max-width: 500px)"; {
+        //  flex-direction: column-reverse;
+        // }
         
 
 .main-nav a {
@@ -14,10 +16,13 @@
     margin: 1.5rem; 
     text-decoration: none;
     color: black;
-
-    @mobile: ~"(max-width: 500px)"; {
+    //media queries
+    display: flex;
+    justify-content: center;
+    
+    // @mobile: ~"(max-width: 500px)"; {
             
-    }
+    // }
 
     &:hover {
         color: lighten(#23293B, 40%);  

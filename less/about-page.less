@@ -22,7 +22,9 @@
 .main-content-about {
     border: 2px solid orange;
     display: flex;
+   //media queries
     justify-content: space-around;
+    flex-direction: column;
 }
 
 .middle-img {
@@ -34,6 +36,8 @@
     border: 2px solid purple;
     display: flex;
     justify-content: space-around;
+    //media queries
+    flex-direction: column;
 }
 
 .lower-containers {
@@ -41,11 +45,23 @@
 
 }
 
+//media queries
+.lower-content-about {
+    display: flex;
+    flex-direction: column;
+}
+
 .lower-containers {
     border: 2px solid slateblue;
     display: flex;
     justify-content: space-around;
 
+}
+
+//media queries
+.lower-containers {
+    display: flex;
+    flex-direction: column;
 }
 
 .lower-articles {
@@ -60,6 +76,3 @@ body {
     background: @background-color-light;
 }
 
-.main-content-container {
-    margin: 30px;
-}
