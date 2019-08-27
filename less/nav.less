@@ -4,11 +4,25 @@
     justify-content: space-around;
     border: 2px solid red;
     
+        @mobile: ~"(max-width: 500px)"; {
+         flex-direction: column-reverse;
+        }
+        
 
 .main-nav a {
+
     margin: 1.5rem; 
     text-decoration: none;
     color: black;
+
+    @mobile: ~"(max-width: 500px)"; {
+            
+    }
+
+    &:hover {
+        color: lighten(#23293B, 40%);  
+        cursor: pointer;
+      }
 }
 
 }

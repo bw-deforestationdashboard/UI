@@ -146,11 +146,16 @@ h3 {
   flex-direction: row-reverse;
   justify-content: space-around;
   border: 2px solid red;
+  flex-direction: column-reverse;
 }
 .nav-bar .main-nav a {
   margin: 1.5rem;
   text-decoration: none;
   color: black;
+}
+.nav-bar .main-nav a:hover {
+  color: #7a87b0;
+  cursor: pointer;
 }
 .about-page-header {
   border: 2px solid black;
@@ -165,6 +170,9 @@ h3 {
   border: 2px solid orange;
   display: flex;
   justify-content: space-around;
+}
+.middle-img {
+  max-width: 100%;
 }
 .lower-content-about {
   border: 2px solid purple;
@@ -181,4 +189,13 @@ h3 {
 }
 .lower-articles {
   border: 2px solid cornflowerblue;
+}
+img {
+  border-radius: 2%;
+}
+body {
+  background: #57A773;
+}
+.main-content-container {
+  margin: 30px;
 }
