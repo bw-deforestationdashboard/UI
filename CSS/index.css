@@ -175,14 +175,8 @@ h3 {
   color: #7a87b0;
   cursor: pointer;
 }
-.about-page-header {
-  border: 2px solid black;
-}
 .about-page-header .header-img {
   max-width: 100%;
-}
-.middle-containers {
-  border: 2px solid green;
 }
 .main-content-about {
   border: 2px solid orange;
