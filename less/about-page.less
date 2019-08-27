@@ -23,8 +23,10 @@
     border: 2px solid orange;
     display: flex;
    //media queries
-    justify-content: space-around;
-    flex-direction: column;
+     @media @mobile {    
+        justify-content: space-around;
+        flex-direction: column;
+     }
 }
 
 .middle-img {
@@ -37,9 +39,9 @@
     display: flex;
     justify-content: space-around;
     //media queries
-    flex-direction: column;
+   @media @mobile {flex-direction: column;
 }
-
+}
 .lower-containers {
     border: 2px solid blue;
 
@@ -47,8 +49,11 @@
 
 //media queries
 .lower-content-about {
-    display: flex;
-    flex-direction: column;
+    
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+        }
 }
 
 .lower-containers {
@@ -60,10 +65,11 @@
 
 //media queries
 .lower-containers {
+   @media @mobile { 
     display: flex;
     flex-direction: column;
 }
-
+}
 .lower-articles {
     border: 2px solid cornflowerblue;
 }

@@ -4,11 +4,12 @@
     justify-content: space-around;
     border: 2px solid red;
     //media queries
+    @media @mobile {
     flex-direction: column;
     align-items: center;
         // @mobile: ~"(max-width: 500px)"; {
         //  flex-direction: column-reverse;
-        // }
+        }
         
 
 .main-nav a {
@@ -17,12 +18,13 @@
     text-decoration: none;
     color: black;
     //media queries
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     
-    // @mobile: ~"(max-width: 500px)"; {
-            
-    // }
+    @media @mobile {
+            display: flex;
+            justify-content: center;
+     }
 
     &:hover {
         color: lighten(#23293B, 40%);  
@@ -30,5 +32,5 @@
       }
 }
 
-}
 
+}

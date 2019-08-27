@@ -153,15 +153,23 @@ h3 {
   flex-direction: row-reverse;
   justify-content: space-around;
   border: 2px solid red;
-  flex-direction: column;
-  align-items: center;
+}
+@media (max-width: 500px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .nav-bar .main-nav a {
   margin: 1.5rem;
   text-decoration: none;
   color: black;
-  display: flex;
-  justify-content: center;
+}
+@media (max-width: 500px) {
+  .nav-bar .main-nav a {
+    display: flex;
+    justify-content: center;
+  }
 }
 .nav-bar .main-nav a:hover {
   color: #7a87b0;
@@ -179,8 +187,12 @@ h3 {
 .main-content-about {
   border: 2px solid orange;
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .main-content-about {
+    justify-content: space-around;
+    flex-direction: column;
+  }
 }
 .middle-img {
   max-width: 100%;
@@ -189,23 +201,31 @@ h3 {
   border: 2px solid purple;
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .lower-content-about {
+    flex-direction: column;
+  }
 }
 .lower-containers {
   border: 2px solid blue;
 }
-.lower-content-about {
-  display: flex;
-  flex-direction: column;
+@media (max-width: 500px) {
+  .lower-content-about {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .lower-containers {
   border: 2px solid slateblue;
   display: flex;
   justify-content: space-around;
 }
-.lower-containers {
-  display: flex;
-  flex-direction: column;
+@media (max-width: 500px) {
+  .lower-containers {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .lower-articles {
   border: 2px solid cornflowerblue;
