@@ -1,6 +1,5 @@
-
 // .header-nav-container {
-    
+
 // }
 
 .about-page-header {
@@ -22,11 +21,17 @@
 .main-content-about {
     border: 2px solid orange;
     display: flex;
-   //media queries
-     @media @mobile {    
+
+    //media queries
+    @media @mobile {
         justify-content: space-around;
         flex-direction: column;
-     }
+    }
+}
+
+.middle-image-divs {
+    display: flex;
+
 }
 
 .middle-img {
@@ -38,10 +43,13 @@
     border: 2px solid purple;
     display: flex;
     justify-content: space-around;
+
     //media queries
-   @media @mobile {flex-direction: column;
+    @media @mobile {
+        flex-direction: column;
+    }
 }
-}
+
 .lower-containers {
     border: 2px solid blue;
 
@@ -49,11 +57,11 @@
 
 //media queries
 .lower-content-about {
-    
-        @media @mobile {
-            display: flex;
-            flex-direction: column;
-        }
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .lower-containers {
@@ -65,11 +73,12 @@
 
 //media queries
 .lower-containers {
-   @media @mobile { 
-    display: flex;
-    flex-direction: column;
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+    }
 }
-}
+
 .lower-articles {
     border: 2px solid cornflowerblue;
 }
@@ -81,4 +90,3 @@ img {
 body {
     background: @background-color-light;
 }
-

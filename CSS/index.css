@@ -194,6 +194,9 @@ h3 {
     flex-direction: column;
   }
 }
+.middle-image-divs {
+  display: flex;
+}
 .middle-img {
   max-width: 100%;
 }
