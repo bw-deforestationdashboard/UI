@@ -224,6 +224,7 @@ footer .a-div nav a:hover {
 }
 .about-page-header .header-img {
   max-width: 100%;
+  padding: 1.5rem;
 }
 .main-content-about {
   border: 2px solid orange;
@@ -236,12 +237,19 @@ footer .a-div nav a:hover {
     flex-direction: column;
   }
 }
+.about-top-article {
+  padding: 1.5rem;
+}
 .middle-image-divs {
   display: flex;
+  padding: 1.5rem;
 }
 .middle-img {
   width: 100%;
   object-fit: contain;
+}
+.middle-containers {
+  width: 50%;
 }
 ul.b {
   list-style-position: inside;
@@ -250,6 +258,7 @@ ul.b {
   border: 2px solid purple;
   display: flex;
   justify-content: space-around;
+  padding: 1.5rem;
 }
 @media (max-width: 500px) {
   .lower-content-about {
@@ -258,6 +267,7 @@ ul.b {
 }
 .lower-containers {
   border: 2px solid blue;
+  padding: 1.5rem;
 }
 @media (max-width: 500px) {
   .lower-content-about {
