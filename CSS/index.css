@@ -128,6 +128,7 @@ table {
 }
 body {
   font-family: 'Lexend Tera', sans-serif;
+  background-image: url(/images/footer_lodyas.png);
 }
 .main-content-container {
   max-width: 1000px;
@@ -192,7 +193,11 @@ h3 {
   display: flex;
 }
 .middle-img {
-  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+ul.b {
+  list-style-position: inside;
 }
 .lower-content-about {
   border: 2px solid purple;
@@ -231,5 +236,5 @@ img {
   border-radius: 2%;
 }
 body {
-  background: #57A773;
+  color: #7D7C7A;
 }
