@@ -178,7 +178,6 @@ h3 {
   cursor: pointer;
 }
 footer {
-  background-color: #6D7A48;
   display: flex;
   height: 20%;
   flex-direction: column;
@@ -208,7 +207,7 @@ footer .a-div nav {
 }
 footer .a-div nav a {
   font-size: large;
-  color: #272838;
+  color: black;
   text-decoration: none;
   margin: 2px;
   font-family: 'Anton', sans-serif;
@@ -221,6 +220,7 @@ footer .a-div nav a {
 footer .a-div nav a:hover {
   border: #855A5C double 2px;
   border-radius: 2px;
+  color: #7a87b0;
 }
 .about-page-header .header-img {
   max-width: 100%;
