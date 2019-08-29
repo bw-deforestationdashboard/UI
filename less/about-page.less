@@ -56,6 +56,11 @@
 
 .middle-containers {
     width: 50%;
+
+    @media @mobile {
+        width: 100%;
+    }
+
 }
 
 ul.b {
@@ -94,6 +99,7 @@ ul.b {
 }
 
 .lower-containers {
+    
     @media @mobile {
         display: flex;
         flex-direction: column;
@@ -101,7 +107,7 @@ ul.b {
 }
 
 .lower-articles {
-    // border: 2px solid cornflowerblue;
+    padding: 1.5rem;
 }
 
 img {
