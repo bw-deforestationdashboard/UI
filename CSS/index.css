@@ -133,24 +133,30 @@ body {
 .main-content-container {
   max-width: 1000px;
   margin: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border: 2px solid orange;
   margin: 0 auto;
 }
-h1 {
+.main-content-container h1 {
   font-size: 2.3rem;
   padding: 1.5rem;
   text-align: center;
 }
-h2 {
+@media (max-width: 500px) {
+  .main-content-container h1 {
+    color: red;
+  }
+}
+.main-content-container h2 {
   font-size: 1.5rem;
   text-align: center;
 }
-h3 {
+.main-content-container h3 {
   font-size: 1.3rem;
+}
+@media (max-width: 500px) {
+  .main-content-container p {
+    color: red;
+  }
 }
 .nav-bar {
   display: flex;
@@ -174,11 +180,57 @@ h3 {
   .nav-bar .main-nav a {
     display: flex;
     justify-content: center;
+    color: red;
   }
 }
 .nav-bar .main-nav a:hover {
   color: #7a87b0;
   cursor: pointer;
+}
+footer {
+  display: flex;
+  height: 20%;
+  flex-direction: column;
+}
+footer .words {
+  width: 90%;
+  justify-content: space-between;
+  display: flex;
+  padding-top: 3rem;
+  margin: auto;
+}
+footer .words div {
+  width: 45%;
+}
+footer .a-div {
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  display: inherit;
+  height: 10vh;
+}
+footer .a-div nav {
+  display: flex;
+  width: 65%;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .a-div nav a {
+  font-size: large;
+  color: black;
+  text-decoration: none;
+  margin: 2px;
+  font-family: 'Anton', sans-serif;
+  width: 25%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .a-div nav a:hover {
+  border: #855A5C double 2px;
+  border-radius: 2px;
+  color: #7a87b0;
 }
 .about-page-header .header-img {
   max-width: 100%;
@@ -189,9 +241,10 @@ h3 {
   padding: 1.5rem;
 }
 @media (max-width: 500px) {
-  .main-content-about {
+  .main-content-about div {
     justify-content: space-around;
     flex-direction: column;
+    color: red;
   }
 }
 .about-top-article {
@@ -248,7 +301,4 @@ ul.b {
 }
 img {
   border-radius: 2%;
-}
-body {
-  color: #7D7C7A;
 }
