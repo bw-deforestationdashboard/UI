@@ -189,6 +189,12 @@ footer .words {
   padding-top: 3rem;
   margin: auto;
 }
+@media screen and (max-width: 500px) {
+  footer .words .words {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 footer .words div {
   width: 45%;
 }
@@ -199,11 +205,21 @@ footer .a-div {
   display: inherit;
   height: 10vh;
 }
+@media screen and (max-width: 500px) {
+  footer .a-div {
+    height: 20vh;
+  }
+}
 footer .a-div nav {
   display: flex;
   width: 65%;
   justify-content: space-around;
   align-items: center;
+}
+@media screen and (max-width: 500px) {
+  footer .a-div nav {
+    flex-direction: column;
+  }
 }
 footer .a-div nav a {
   font-size: large;
@@ -221,9 +237,29 @@ footer .a-div nav a:hover {
   border: #855A5C double 2px;
   border-radius: 2px;
 }
+@media screen and (max-width: 500px) {
+  footer .a-div nav a {
+    width: 75%;
+  }
+}
 body {
   background-color: #151515;
   background-image: url(/img/footer_lodyas.png);
+}
+header {
+  height: 15%;
+  font-size: 3.5rem;
+  display: flex;
+  padding: 1%;
+}
+header a {
+  text-decoration: none;
+  color: #cf5c36;
+  font-family: 'Anton', sans-serif;
+  padding: 4px;
+}
+header .login {
+  padding-left: 40%;
 }
 .C-T-A {
   background-color: #7D6D61;
@@ -246,6 +282,11 @@ body {
   justify-content: center;
   text-shadow: #7D7C7A 1px 2.5px 2px;
 }
+@media screen and (max-width: 500px) {
+  .C-T-A h1 {
+    text-align: center;
+  }
+}
 .video-section {
   background-color: #7D6D61;
 }
@@ -259,9 +300,15 @@ body {
   justify-content: space-evenly;
   background-color: #7D6D61;
 }
+@media screen and (max-width: 500px) {
+  .content-div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .content-div p {
   margin: 2rem;
-  background-color: #CF5C36;
+  background-color: #cf5c36;
   border-radius: 9px;
   align-content: center;
   width: 45%;
@@ -275,7 +322,7 @@ body {
 .ourTeam h1 {
   font-family: 'Cinzel', serif;
   font-size: 9rem;
-  justify-content: center;
+  text-align: center;
 }
 .ourTeam .people {
   display: flex;
@@ -284,15 +331,19 @@ body {
   justify-content: space-around;
   margin: auto;
 }
+.ourTeam .people img {
+  max-width: 250px;
+  max-height: 249px;
+}
 .ourTeam .person {
   padding: 5%;
   margin: 5%;
-  background-color: #CF5C36;
+  background-color: #cf5c36;
   border-radius: 4px;
   flex-direction: column;
   display: flex;
 }
-.ourTeam button {
+.ourTeam a {
   display: flex;
   text-decoration: none;
   width: 100%;
@@ -301,9 +352,12 @@ body {
   justify-content: center;
   font-family: 'Noto Serif', serif;
   border: none;
-  background-color: #CF5C36;
+  background-color: #cf5c36;
+  color: #272838;
+  padding: 8px;
+  align-items: center;
 }
-.ourTeam button:hover {
+.ourTeam a:hover {
   background-color: #7D6D61;
-  color: #CF5C36;
+  color: #cf5c36;
 }
