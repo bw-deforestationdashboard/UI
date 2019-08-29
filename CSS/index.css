@@ -148,11 +148,7 @@ body {
 }
 .main-content-container h3 {
   font-size: 1.3rem;
-}
-@media (max-width: 500px) {
-  .main-content-container h3 {
-    text-align: center;
-  }
+  text-align: center;
 }
 .nav-bar {
   display: flex;
@@ -302,4 +298,7 @@ ul.b {
 }
 img {
   border-radius: 2%;
+}
+address {
+  text-align: center;
 }
