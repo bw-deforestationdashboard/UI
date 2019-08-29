@@ -3,6 +3,24 @@ body {
     background-image: url(/img/footer_lodyas.png);
 }
 
+header {
+    height: 15%;
+    font-size: 3.5rem;
+    display: flex;
+    padding: 1%;
+
+    a {
+        text-decoration: none;
+        color: @lava;
+        font-family: 'Anton', sans-serif;
+        padding: 4px;
+    }
+
+    .login {
+        padding-left: 40%;
+    }
+}
+
 .C-T-A {
     background-color: #7D6D61;
     display: flex;
@@ -26,8 +44,17 @@ body {
         display: flex;
         justify-content: center;
         text-shadow: #7D7C7A 1px 2.5px 2px;
+
+        @media screen and (max-width:500px) {
+
+            text-align: center;
+
+        }
     }
 }
+
+
+
 
 .video-section {
     background-color: #7D6D61;
@@ -45,28 +72,36 @@ body {
     justify-content: space-evenly;
     background-color: #7D6D61;
 
+    @media screen and (max-width:500px) {
+        flex-direction: column;
+        align-items: center;
+    }
 
 
     p {
         margin: 2rem;
-        background-color: #CF5C36;
+        background-color: @lava;
         border-radius: 9px;
         align-content: center;
         width: 45%;
         padding: 2rem;
     }
 
+
 }
+
+
 
 .ourTeam {
     display: flex;
     flex-direction: column;
     height: auto;
 
+
     h1 {
         font-family: 'Cinzel', serif;
         font-size: 9rem;
-        justify-content: center;
+        text-align: center;
     }
 
     .people {
@@ -75,18 +110,25 @@ body {
         width: 90%;
         justify-content: space-around;
         margin: auto;
+
+        img {
+            max-width: 250px;
+            max-height: 249px;
+        }
     }
 
     .person {
         padding: 5%;
         margin: 5%;
-        background-color: #CF5C36;
+        background-color: @lava;
         border-radius: 4px;
         flex-direction: column;
         display: flex;
     }
 
-    button {
+
+
+    a {
         display: flex;
         text-decoration: none;
         width: 100%;
@@ -95,11 +137,15 @@ body {
         justify-content: center;
         font-family: 'Noto Serif', serif;
         border: none;
-        background-color: #CF5C36;
+        background-color: @lava;
+        color: #272838;
+        padding: 8px;
+        align-items: center;
 
         &:hover {
             background-color: #7D6D61;
-            color: #CF5C36;
+            color: @lava;
         }
     }
+
 }
